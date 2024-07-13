@@ -1,0 +1,52 @@
+form {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 16px;
+    padding: 16px;
+    max-width: fit-content;
+    border-radius: 6px;
+
+    height: 440px;
+
+    gap: 20px;
+
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 8px;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 2px double white;
+    }
+}
+
+#switch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid white;
+    background-color: blueviolet;
+    color: white;
+    max-width: 400px;
+    height: 56px;
+    padding: 16px;
+    box-sizing: border-box;
+
+    span {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    span[data-active="true"] {
+        background-color: blue;
+        color: white;
+        height: 28px;
+        border-radius: 30px;
+    }
+}
